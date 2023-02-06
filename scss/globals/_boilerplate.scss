@@ -1,0 +1,114 @@
+body {
+  background-image: url(../images/bg-mobile.png);
+  font-family: var(--ff-primary);
+
+  @media (min-width: 50rem) {
+
+    background-image: url(../images/bg-desktop.png);
+    background-position: bottom;
+    background-size: 100vw 50vh;
+    background-repeat: no-repeat;
+    background-color: var(--Very-Dark-Blue);
+  }
+
+}
+
+.top {
+  background: var(--Dark-Blue);
+  padding: 2.5rem;
+  border-radius: .7rem 6rem .7rem .7rem;
+
+  &__images {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-shrink: 0;
+    align-items: center;
+
+  }
+
+  @media (min-width: 50em) {
+    align-self: flex-end;
+    width: 70%;
+    padding-left: 2.5rem;
+    padding-right: 6rem;
+  }
+
+  @media (min-width: 62.5em) {
+    align-self: flex-end;
+    width: 75%;
+    max-width: 20rem;
+  }
+
+}
+
+.bottom {
+  background: var(--Dark-Blue);
+  padding: 2.4rem;
+  border-radius: .7rem;
+
+
+  @media (min-width: 50em) {
+    align-self: flex-end;
+    width: 100%;
+  }
+
+}
+
+.bottom__paragraph--flex {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.bottom__paragraph--remark {
+  background-color: white;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: .7rem;
+  position: relative;
+  transform: translateY(-70%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  padding: .5rem .7rem;
+
+  @media (min-width: 50em) {
+    padding: .5rem 0;
+    position: absolute;
+    width: 20%;
+    right: 2rem;
+    top: 1rem;
+    border-radius: .7rem .7rem 0 .7rem;
+  }
+
+  @media (min-width: 53.32em) {
+    padding: .5rem 0;
+    position: absolute;
+    width: 20%;
+    right: 2rem;
+    top: 3rem;
+    border-radius: .7rem .7rem 0 .7rem;
+  }
+
+}
+
+.bottom__paragraph--remark::after {
+
+  @media (min-width: 50em) {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 1.18rem solid transparent;
+    border-top-color: white;
+    border-bottom: 0;
+    border-right: 0;
+    margin-right: 0;
+    margin-bottom: -1rem;
+  }
+}

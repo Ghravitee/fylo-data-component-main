@@ -1,0 +1,54 @@
+.bottom__heading {
+   font-size: .9rem;
+   color: var(--Pale-Blue);
+   font-weight: 400;
+   text-align: center;
+
+   @media (min-width: 50em) {
+      text-align: left;
+   }
+
+   &--span {
+      font-weight: 700;
+   }
+
+}
+
+.bottom__paragraph--1,
+.bottom__paragraph--2 {
+   font-size: .8rem;
+   font-weight: 700;
+   color: var(--Pale-Blue);
+}
+
+
+.bottom__paragraph--remark__2 {
+   font-size: .7rem;
+   font-weight: 800;
+   color: var(--Grayish-Blue);
+   text-transform: uppercase;
+
+   @media (min-width: 50em) {
+      font-size: .7rem;
+      padding: .2rem;
+   }
+
+   @media (min-width: 62.5em) {
+      font-size: .7rem;
+   }
+}
+
+   .bottom__paragraph--remark__1 {
+      color: var(--Very-Dark-Blue);
+      font-size: 2.5rem;
+      font-weight: 700;
+
+      @media (min-width: 50em) {
+         font-size: 1.5rem;
+      }
+
+      @media (min-width: 62.5em) {
+         font-size: 2.5rem;
+      }
+   }
+
